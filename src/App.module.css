@@ -1,0 +1,30 @@
+.wrapper{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+/* 
+** a unidade rem tem como base o font-size do html,
+se caso a fonte diminuir a que tem rem é diminuido
+para fazer a respossividade 
+é necessario os calculos:
+16px: tamanaho padrao
+14px: o tamanho que quero para mobile
+14 * 1000 / 16 = 87,5%
+
+font size:87,5%
+*/
+
+@media(max-width: 768px){
+    html{
+        font-size:87.5% ;
+    }
+    .wrapper{
+        grid-template-columns: 1fr ;
+    }
+}

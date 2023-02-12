@@ -1,0 +1,18 @@
+.header{
+    background-color:var(--gray-800);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+
+}
+
+.header img{
+    height: 2rem;
+    background-color: var(--green-500);
+  
+}
+
+.header strong{
+    margin: 0 .5rem;
+
+}
